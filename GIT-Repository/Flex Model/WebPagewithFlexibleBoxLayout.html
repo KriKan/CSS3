@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <import/> </import>
+
+    <script>        </script>
+    <style>
+        body {
+            margin: 0px
+        }
+        
+        body > div {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        
+        body > div > header,
+        nav,
+        aside,
+        main,
+        footer {
+            background: #ccc;
+            border-radius: 7px;
+            margin: 5px;
+            padding: 20px;
+            -webkit-flex: 1;
+            flex: 0 1 100%;
+        }
+        
+        body > div > header {
+            -webkit-order: 1;
+            order: 1;
+            background: tomato;
+        }
+        
+        body > div > nav {
+            -webkit-order: 2;
+            order: 2;
+        }
+        
+        body > div > main {
+            -webkit-order: 3;
+            order: 3;
+        }
+        
+        body > div > aside {
+            -webkit-order: 3;
+            order: 4;
+        }
+        
+        body > div > footer {
+            -webkit-order: 4;
+            order: 5;
+        }
+    </style>
+</head>
+
+<body style="Background-color:skyblue;">
+    <div>
+        <header>Header menu</header>
+        <nav>Navigation Links</nav>
+        <main>Body Content</main>
+        <aside>Side Content</aside>
+        <footer>Footer Info</footer>
+    </div>
+</body>
+
+</html>
